@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "488e86fd8fa69d8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f5bc7644b3129d7",
+        "type": "tabs",
+        "dimension": 75.06345177664974,
+        "children": [
+          {
+            "id": "9d3c90518e293c98",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Front-End/Projeto React.canvas",
+                "viewState": {
+                  "x": -360.989973014984,
+                  "y": -138.36930945206032,
+                  "zoom": -0.6666666666666663
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Projeto React"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3725fb3c2f460825",
+        "type": "tabs",
+        "dimension": 24.936548223350254,
+        "children": [
+          {
+            "id": "4ec966240c870e31",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "838bc566eae1019b",
+    "type": "split",
+    "children": [
+      {
+        "id": "03ec6385e40ff908",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2cae5d60221ea16",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "21840ecbee7bc4c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "91f88e04cc1c1c23",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de03d019ecb550c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "48ec685a41122e83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6eacf639462b216",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Front-End/Projeto React.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Projeto React"
+            }
+          },
+          {
+            "id": "f3f9ebb85087e56b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Front-End/Projeto React.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Projeto React"
+            }
+          },
+          {
+            "id": "8026a815eb31c6b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b9083079f6d7140d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Front-End/Projeto React.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Projeto React"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9d3c90518e293c98",
+  "lastOpenFiles": [
+    "Front-End/Projeto React.canvas",
+    "Front-End/React.js.md",
+    "Front-End/Typescript.md",
+    "Untitled.md",
+    "Back-End",
+    "Front-End",
+    "Welcome.md",
+    "Estudos/Front-End",
+    "Estudos"
+  ]
+}
