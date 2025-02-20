@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"3775dfc90d6abe35","type":"text","text":"Criando Projeto React.js","x":-124,"y":-181,"width":250,"height":60,"color":"6"},
+		{"id":"5bf0224b1b904a15","type":"text","text":"npm create vite@latest","x":-124,"y":-20,"width":250,"height":60,"color":"6"},
+		{"id":"751be167e5dbdc3a","type":"text","text":"O que é o vite?","x":-460,"y":-20,"width":250,"height":60,"color":"6"},
+		{"id":"bc711097a245880e","type":"text","text":"O vite é uma ferramenta de construção (build tool) para projetos front-end. Quais os pontos positivos?","x":-800,"y":-50,"width":250,"height":120,"color":"4"},
+		{"id":"2104e9d3d912ef1e","type":"text","text":"**Carregamento ultrarrápido** 🔥\n\n- O Vite usa **ES Modules (ESM)** nativos do navegador durante o desenvolvimento, o que elimina a necessidade de empacotar todo o código antes da execução.","x":-1320,"y":-552,"width":380,"height":210,"color":"6"},
+		{"id":"3ed2108ce4b848de","type":"text","text":"Hot Module Replacement (HMR) eficiente** \n * Ele atualiza apenas os módulos alterados em tempo real, sem precisar recarregar toda a página, tornando o desenvolvimento mais ágil.","x":-1320,"y":-312,"width":380,"height":191,"color":"6"},
+		{"id":"c7dd998177629550","type":"text","text":"**Suporte nativo a TypeScript, Vue, React e outros**\n\n- O Vite vem pronto para projetos Vue, React, Svelte e outros frameworks modernos.","x":-1320,"y":-91,"width":380,"height":184,"color":"6"},
+		{"id":"5b1bb0b829611b4c","type":"text","text":"**Build otimizado com Rollup** 📦\n\n- Na hora de gerar a versão final do projeto, o Vite usa o **Rollup**, criando pacotes otimizados para produção.","x":-1320,"y":119,"width":380,"height":184,"color":"6"},
+		{"id":"91ae27692e586ffa","type":"text","text":"**Configuração mínima** 🛠️\n\n- Diferente do Webpack, que exige várias configurações, o Vite já vem com padrões prontos que facilitam a vida do desenvolvedor.","x":-1320,"y":339,"width":380,"height":184,"color":"6"},
+		{"id":"6863096526f544d5","type":"text","text":"O que é um Webpack?","x":-1673,"y":-21,"width":250,"height":60,"color":"6"},
+		{"id":"ca4b6dd1b5278e7d","type":"text","text":"O **Webpack** é um **empacotador de módulos** (_module bundler_) para JavaScript, usado principalmente em aplicações web modernas. Ele processa e otimiza arquivos como **JavaScript, CSS, imagens e outros ativos** para que possam ser usados de forma eficiente em um navegador","x":-2140,"y":-91,"width":380,"height":210,"color":"6"},
+		{"id":"22ac152c1934cb7a","type":"text","text":"O que é o React?","x":-124,"y":-348,"width":250,"height":60,"color":"6"},
+		{"id":"508cf28372105423","type":"text","text":"**Explicação:** React é uma biblioteca JavaScript para criar interfaces de usuário interativas e reativas, baseada no conceito de **componentes reutilizáveis**.\n\n🛠 **Destaques:**\n\n- Criado pelo Facebook (Meta)\n- Usa um DOM virtual para otimizar a renderização\n- Baseado no paradigma **\"componente baseado em estado\"**","x":240,"y":-520,"width":525,"height":289,"color":"4"},
+		{"id":"bc01c7b6e4ce54f8","type":"text","text":"O **DOM Virtual** (_Virtual DOM_) é uma técnica usada pelo React para melhorar o desempenho da interface de usuário. Em vez de modificar o **DOM real** diretamente a cada mudança, o React cria uma **cópia virtual do DOM na memória** e só atualiza as partes que realmente mudaram.\n## 🔥 **Vantagens do Virtual DOM**\n\n✅ **Melhor desempenho** – Reduz atualizações desnecessárias no DOM real.  \n✅ **Maior eficiência** – O algoritmo de diffing otimiza as atualizações.  \n✅ **Código mais limpo** – O React cuida da renderização, sem necessidade de manipulação direta do DOM com `document.querySelector()` ou `getElementById()`.","x":240,"y":-1040,"width":525,"height":440,"color":"4"},
+		{"id":"7e0c1d8263ac5eef","type":"text","text":"### 📌 **2. Estrutura de Pastas do Projeto React com Vite**\n\n📋 **Explicação:** Após criar o projeto, a estrutura de pastas terá:\n\n`meu-projeto/ \n│── node_modules/   # Dependências do projeto \n│── public/         # Arquivos estáticos \n│── src/            # Código principal do app │   \n├── assets/     # Imagens e outros recursos │   \n├── components/ # Componentes reutilizáveis │   \n├── App.jsx     # Componente principal │   \n├── main.jsx    # Ponto de entrada do app \n│── index.html      # HTML principal \n│── package.json    # Configuração do projeto e dependências │── vite.config.js  # Configuração do Vite`","x":-259,"y":157,"width":520,"height":403,"color":"4"}
+	],
+	"edges":[
+		{"id":"add9ad21c68eb34d","fromNode":"3775dfc90d6abe35","fromSide":"bottom","toNode":"5bf0224b1b904a15","toSide":"top"},
+		{"id":"2cc561883095fb4b","fromNode":"5bf0224b1b904a15","fromSide":"left","toNode":"751be167e5dbdc3a","toSide":"right"},
+		{"id":"c82dad46baa7e61f","fromNode":"751be167e5dbdc3a","fromSide":"left","toNode":"bc711097a245880e","toSide":"right"},
+		{"id":"49390adc79560504","fromNode":"bc711097a245880e","fromSide":"left","toNode":"2104e9d3d912ef1e","toSide":"right"},
+		{"id":"c0d0b2d0e7d00362","fromNode":"bc711097a245880e","fromSide":"left","toNode":"3ed2108ce4b848de","toSide":"right"},
+		{"id":"565ec7d95d36df4b","fromNode":"bc711097a245880e","fromSide":"left","toNode":"c7dd998177629550","toSide":"right"},
+		{"id":"83a601d7621a2289","fromNode":"bc711097a245880e","fromSide":"left","toNode":"5b1bb0b829611b4c","toSide":"right"},
+		{"id":"5a815679435375be","fromNode":"bc711097a245880e","fromSide":"left","toNode":"91ae27692e586ffa","toSide":"right"},
+		{"id":"97ba8d6365fad457","fromNode":"91ae27692e586ffa","fromSide":"left","toNode":"6863096526f544d5","toSide":"right"},
+		{"id":"bd3b5e133b2af02c","fromNode":"6863096526f544d5","fromSide":"left","toNode":"ca4b6dd1b5278e7d","toSide":"right"},
+		{"id":"af8000c9e4dc5d19","fromNode":"3775dfc90d6abe35","fromSide":"top","toNode":"22ac152c1934cb7a","toSide":"bottom"},
+		{"id":"7b133dca10e8a686","fromNode":"22ac152c1934cb7a","fromSide":"right","toNode":"508cf28372105423","toSide":"left"},
+		{"id":"32939bdc710ca639","fromNode":"508cf28372105423","fromSide":"top","toNode":"bc01c7b6e4ce54f8","toSide":"bottom"},
+		{"id":"d088707b2d2020e4","fromNode":"5bf0224b1b904a15","fromSide":"bottom","toNode":"7e0c1d8263ac5eef","toSide":"top"}
+	]
+}

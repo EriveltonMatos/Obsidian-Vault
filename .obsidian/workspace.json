@@ -6,7 +6,7 @@
       {
         "id": "5f5bc7644b3129d7",
         "type": "tabs",
-        "dimension": 75.06345177664974,
+        "dimension": 75,
         "children": [
           {
             "id": "9d3c90518e293c98",
@@ -14,7 +14,7 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Front-End/Projeto React.canvas",
+                "file": "Front-End/React/Projeto React.canvas",
                 "viewState": {
                   "x": -360.989973014984,
                   "y": -138.36930945206032,
@@ -31,12 +31,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Back-End/Java.md",
+                "file": "Front-End/React/React.js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "React.js"
             }
           }
         ],
@@ -45,7 +45,7 @@
       {
         "id": "3725fb3c2f460825",
         "type": "tabs",
-        "dimension": 24.936548223350254,
+        "dimension": 25,
         "children": [
           {
             "id": "4ec966240c870e31",
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Back-End/Java.md",
+                "file": "Front-End/React/Projeto React.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Java"
+              "title": "Backlinks for Projeto React"
             }
           },
           {
@@ -149,12 +149,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Back-End/Java.md",
+                "file": "Front-End/React/Projeto React.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Java"
+              "title": "Outgoing links from Projeto React"
             }
           },
           {
@@ -178,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Back-End/Java.md",
+                "file": "Front-End/React/Projeto React.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java"
+              "title": "Outline of Projeto React"
             }
           }
         ]
@@ -204,12 +204,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2cae5d60221ea16",
+  "active": "44b6cd799eed8a35",
   "lastOpenFiles": [
-    "Front-End/Projeto React.canvas",
-    "Back-End/Java.md",
-    "Front-End/React.js.md",
+    "Front-End/React/React.js.md",
+    "imagens/Pasted image 20250220163243.png",
+    "imagens/Pasted image 20250220163206.png",
+    "Front-End/React/Projeto React.canvas",
+    "imagens/Pasted image 20250220161114.png",
+    "imagens/Pasted image 20250220160945.png",
+    "imagens/Pasted image 20250220160943.png",
+    "imagens/Pasted image 20250220154816.png",
+    "imagens/Pasted image 20250220152127.png",
+    "imagens/Pasted image 20250220152047.png",
+    "imagens/Pasted image 20250220152021.png",
+    "imagens/Pasted image 20250220151937.png",
+    "Front-End/React/Estrutura de Pastas - React.md",
+    "imagens",
+    "Front-End/Next.JS.md",
+    "Front-End/Tailwind.md",
+    "Front-End/React",
     "Front-End/Typescript.md",
+    "Back-End/Java.md",
     "Back-End",
     "Front-End",
     "Welcome.md",
