@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5f5bc7644b3129d7",
+        "id": "05fd2791f59c26fd",
         "type": "tabs",
-        "dimension": 75,
         "children": [
           {
-            "id": "9d3c90518e293c98",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Front-End/React/Projeto React.canvas",
-                "viewState": {
-                  "x": -360.989973014984,
-                  "y": -138.36930945206032,
-                  "zoom": -0.6666666666666663
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Projeto React"
-            }
-          },
-          {
-            "id": "44b6cd799eed8a35",
+            "id": "d7e82f8ef9760021",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -37,24 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "React.js"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "3725fb3c2f460825",
-        "type": "tabs",
-        "dimension": 25,
-        "children": [
-          {
-            "id": "4ec966240c870e31",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -204,26 +168,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44b6cd799eed8a35",
+  "active": "d7e82f8ef9760021",
   "lastOpenFiles": [
+    "imagens/Pasted image 20250221161936.png",
+    "imagens/Pasted image 20250221160602.png",
+    "imagens/Pasted image 20250221160556.png",
+    "Pasted image 20250221161936.png",
+    "Pasted image 20250221160602.png",
+    "Pasted image 20250221160556.png",
+    "imagens/Pasted image 20250221155953.png",
     "Front-End/React/React.js.md",
-    "imagens/Pasted image 20250220163243.png",
-    "imagens/Pasted image 20250220163206.png",
+    "imagens/Pasted image 20250221155930.png",
+    "imagens/Pasted image 20250221155718.png",
+    "imagens/Pasted image 20250221155617.png",
+    "imagens/Pasted image 20250221154509.png",
+    "Front-End/Typescript.md",
+    "Front-End/Tailwind.md",
     "Front-End/React/Projeto React.canvas",
-    "imagens/Pasted image 20250220161114.png",
-    "imagens/Pasted image 20250220160945.png",
-    "imagens/Pasted image 20250220160943.png",
-    "imagens/Pasted image 20250220154816.png",
-    "imagens/Pasted image 20250220152127.png",
-    "imagens/Pasted image 20250220152047.png",
-    "imagens/Pasted image 20250220152021.png",
-    "imagens/Pasted image 20250220151937.png",
     "Front-End/React/Estrutura de Pastas - React.md",
+    "Front-End/HTML.md",
+    "Front-End/CSS.md",
+    "Front-End/Javascript.md",
     "imagens",
     "Front-End/Next.JS.md",
-    "Front-End/Tailwind.md",
     "Front-End/React",
-    "Front-End/Typescript.md",
     "Back-End/Java.md",
     "Back-End",
     "Front-End",

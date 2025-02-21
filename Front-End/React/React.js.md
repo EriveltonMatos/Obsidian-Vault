@@ -62,6 +62,8 @@ Se o projeto crescer, use algo além de `useContext`:
 
 **React** é uma **biblioteca JavaScript** para criar interfaces de usuário (UIs). Ele foi criado pelo **Facebook** e se tornou muito popular para desenvolvimento de aplicações web dinâmicas, ou seja, aquelas que precisam interagir com o usuário de forma rápida e fluida, como redes sociais, dashboards, e-commerce, etc.
 
+## Pré-requisitos: [[Javascript]], [[HTML]], [[CSS]]
+
 ### 💡 **Principais características do React:**
 
 1. **Componentes**: O React é baseado em componentes, que são pedaços de código que representam partes da interface de usuário. Eles podem ser reutilizados e podem ter seu próprio **estado** (dados internos) e **props** (dados passados de um componente pai).
@@ -79,7 +81,9 @@ Se o projeto crescer, use algo além de `useContext`:
     
 ![[Pasted image 20250220161114.png]]
     
-5. **React Hooks**: Antes dos **hooks**, o React usava apenas componentes de classe para gerenciar o estado e o ciclo de vida. Porém, com os hooks, você pode fazer tudo isso em **componentes funcionais**, tornando o código mais simples e reutilizável. O `useState` e o `useEffect` são os mais comuns, mas existem outros também.
+1. **React Hooks**: Antes dos **hooks**, o React usava apenas componentes de classe para gerenciar o estado e o ciclo de vida. Porém, com os hooks, você pode fazer tudo isso em **componentes funcionais**, tornando o código mais simples e reutilizável. O `useState` e o `useEffect` são os mais comuns, mas existem outros também.
+
+[[Projeto React.canvas|Projeto React]]
 
 ### 🎯 **Por que usar o React?**
 
@@ -94,7 +98,7 @@ Se o projeto crescer, use algo além de `useContext`:
 
 ## **Criando um Projeto React**
 
-### Vite
+### **Vite**
 
 ### 💡 **O que é o Vite?**
 
@@ -189,9 +193,20 @@ Aqui, a função **Componente** é exportada com o nome dela, e ao importar, voc
 
 Essa escolha é bastante subjetiva, mas seguir as convenções da comunidade pode tornar o código mais legível e alinhado com os projetos em que você trabalha!
 
+
 ---
 ---
 
+
+### **Fragments <></> 
+
+### 🔥 **O que é o `Fragment` no React?**
+
+O **`Fragment`** é um componente especial do React que permite agrupar um conjunto de elementos sem adicionar um nó extra ao DOM. Em outras palavras, ele **não cria um elemento adicional no HTML**, mas ainda permite que você agrupe múltiplos elementos e os retorne de um componente.
+
+
+---
+---
 
 ### **ESTADO - STATE**
 ## 🎯 **O que é Estado (State) no React?**
@@ -216,6 +231,282 @@ Se um componente tem um **input de formulário**, seu estado pode ser:
 - `"João"`, depois `"Maria"`, conforme o usuário digita.
 
 O React **re-renderiza** o componente sempre que o estado muda para mostrar a informação atualizada.
+
+
+---
+---
+
+## **Props vs State**
+
+## 🎁 **O que são `props`?** (Propriedades)
+
+
+Os `props` (abreviação de "propriedades") são como **pacotes de informações** que um **componente-pai envia para um componente-filho**.
+Isso será muito útil quando os dados forem carregados via banco de dados.
+As props vem em um objeto no argumento da função do componente.
+
+🔹 **São fixos** no componente que os recebe — o próprio componente **não pode mudar os `props`**, apenas o componente **pai pode alterá-los**.  
+🔹 **Servem para personalizar componentes**, tornando-os reutilizáveis.  
+🔹 **Parecem atributos do HTML**, mas são passados como propriedades de um objeto no React.
+
+### **🛠 Exemplo Simples de `props`**
+
+Imagine que você está criando um **componente de Cartão de Perfil** (`Perfil`), onde cada pessoa tem um nome diferente.
+
+![[Pasted image 20250221094233.png]]
+
+🔹 **O que acontece aqui?**
+
+- `App` é o **componente-pai** e está enviando a propriedade `nome` para o **componente-filho** `Perfil`.
+- `Perfil` recebe essa propriedade (`props.nome`) e exibe na tela `"Olá, meu nome é João!"` e `"Olá, meu nome é Maria!"`.
+
+### **⛔ Limitação dos `props`**
+
+Se tentarmos modificar um `prop` dentro do próprio componente, **o React não permite**. Por exemplo, isso não funcionaria:
+
+![[Pasted image 20250221094317.png]]
+
+## Exemplo criando um componente com props name e modelo.
+
+![[Pasted image 20250221160602.png]]
+
+![[Pasted image 20250221154509.png]]
+
+
+## **Destructuring Props**
+
+Destructuring Props (**desestruturação de propriedades**) é uma forma de **extrair valores das props diretamente dentro dos parâmetros da função**. Isso torna o código mais **limpo, legível e fácil de manter**.
+
+## 🛑 **Antes da Desestruturação (Sem Destructuring)**
+
+![[Pasted image 20250221155617.png]]
+
+📌 **O que acontece aqui?**
+
+- `props` é um objeto, e estamos acessando `props.nome` dentro do componente.
+
+🔴 **Problema:** Ficar escrevendo `props.algumaCoisa` pode deixar o código mais verboso.
+
+---
+
+✅ **Depois da Desestruturação (Com Destructuring)**
+
+![[Pasted image 20250221155718.png]]
+
+📌 **O que mudou?**
+
+- Em vez de receber `props` como um objeto inteiro, desestruturamos diretamente `{ nome }`.
+- Agora podemos **usar `nome` diretamente**, sem precisar de `props.nome`.
+
+**Resultado final:** O código ficou **mais limpo e fácil de ler!** 🎯
+
+Com Destructuring
+
+![[Pasted image 20250221155930.png]]
+
+✅ **O que melhorou?**
+
+- Agora usamos **`nome` e `idade` diretamente** sem precisar de `props.nome` ou `props.idade`.
+- O código está **mais limpo e fácil de entender**.
+
+## 🔥 **Destructuring em Interfaces (TypeScript)**
+
+Se estiver usando TypeScript, podemos definir uma interface para as props e ainda usar destructuring:
+
+![[Pasted image 20250221155953.png]]
+
+📌 **Vantagens com TypeScript:**
+
+- Garantimos que `nome` é uma string e `idade` é um número.
+- Evitamos erros ao passar props incorretas.
+
+## 🎯 **Conclusão**
+
+✅ **Destructuring Props** é uma forma de tornar o código **mais limpo e legível**.  
+✅ Funciona extraindo as props **diretamente nos parâmetros da função**.  
+✅ Pode ser usado **com ou sem TypeScript**.  
+✅ É **altamente recomendado** para manter o código mais organizado.
+
+Exemplo com mais propriedades:
+
+![[Pasted image 20250221161936.png]]
+
+
+---
+---
+
+
+## 🔄 **O que é `state`?** (Estado)
+
+O `state` (estado) é **como uma memória interna do componente** que pode mudar ao longo do tempo. Ele é usado quando queremos que um **componente se lembre de algo e mude conforme o usuário interage**.
+
+🔹 **É controlado pelo próprio componente**  
+🔹 **Pode mudar ao longo do tempo**  
+🔹 **Atualiza a interface automaticamente quando muda**
+
+### **🛠 Exemplo Simples de `state`**
+
+Imagine um contador que começa em `0` e aumenta de valor quando clicamos no botão:
+
+![[Pasted image 20250221094656.png]]
+
+🔹 **O que acontece aqui?**
+
+- `useState(0)` cria um **estado chamado `contador`**, que começa com `0`.
+- `setContador(contador + 1)` **atualiza o estado** cada vez que o botão é clicado.
+- O React **re-renderiza o componente automaticamente**, mostrando o novo valor na tela.
+## 🔎 **Resumo das Diferenças Entre `props` e `state`**
+
+| **Característica**           | **`props` (Propriedades)**                          | **`state` (Estado)**                                |
+| ---------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| **Quem controla?**           | O **componente-pai**                                | O **próprio componente**                            |
+| **Pode mudar?**              | ❌ **Não** (somente leitura)                         | ✅ **Sim** (modificável com `setState`)              |
+| **Quem pode alterá-lo?**     | O pai que passou os dados                           | O próprio componente                                |
+| **Quando usar?**             | Para passar informações de um componente para outro | Para armazenar dados que mudam dentro do componente |
+| **O que acontece se mudar?** | Nada, pois não pode mudar sozinho                   | O componente **se atualiza** automaticamente        |
+
+## 🎯 **Conclusão**
+
+🔹 **Use `props` quando precisar passar informações de um componente para outro**.  
+🔹 **Use `state` quando precisar armazenar e modificar informações dentro do próprio componente**.  
+🔹 **Se um dado não muda, use `props`! Se um dado precisa mudar, use `state`!**
+
+### **Previous State**
+
+O **previous state** (ou estado anterior) é o valor mais recente do estado antes de ser atualizado. Ele é útil quando você precisa calcular o novo estado com base no estado atual.
+
+Nos permite pegar o dado em seu valor original dentro de um set de dado.
+É muito utilizado para modificar listas, pois temos o valor antigo e transformamos em um valor novo
+O primeiro argumento de um set sempre será o previous state
+
+No React, quando atualizamos um estado com `setState`, podemos passar:  
+1️⃣ **Um novo valor diretamente** (`setCount(count + 1)`)  
+2️⃣ **Uma função que recebe o estado anterior** (`setCount(prevCount => prevCount + 1)`)
+
+Usar o **estado anterior** é importante em **atualizações assíncronas** para evitar bugs.
+
+## 📌 **Resumo**
+
+|**Ponto**|**Explicação**|
+|---|---|
+|`previous state`|O valor anterior do estado antes da atualização|
+|Quando usar?|Quando o novo estado depende do valor anterior|
+|Como usar?|`setState(prevState => novoValor)`|
+|Benefícios|Evita bugs em atualizações assíncronas e múltiplas chamadas de `setState`|
+
+## 🚀 **Conclusão**
+
+- O **previous state** é essencial para garantir que seu estado seja atualizado corretamente.
+- Sempre use `prevState` quando sua nova atualização depende do valor anterior.
+- Isso evita bugs e melhora o desempenho da aplicação.
+
+---
+---
+
+### **RENDERIZAÇÃO CONDICIONAL**
+
+## **Renderização Condicional no React**
+
+A **renderização condicional** em React permite que um componente **mostre algo na tela** com base em uma condição. Ou seja, você pode exibir **diferentes conteúdos** dependendo de uma variável ou estado.
+
+### 🎨 **Explicação Simples**
+
+Imagine que você tem um site que **mostra um botão "Entrar" se o usuário não estiver logado** e **"Sair" se ele estiver logado**.
+
+- Se o usuário **está logado** → Mostra "Sair"
+- Se o usuário **não está logado** → Mostra "Entrar"
+
+Isso é **renderização condicional**: **mostrar algo diferente dependendo de uma condição**.
+
+## 🛠 **1. Renderização Condicional com `if`**
+
+Podemos usar um **if normal** dentro do componente para decidir o que renderizar.
+
+![[Pasted image 20250221115254.png]]
+
+### 🔎 **O que acontece aqui?**
+
+✅ Se `estaLogado` for `true`, aparece **"Bem-vindo de volta!"**  
+✅ Se `estaLogado` for `false`, aparece **"Por favor, faça login."**
+
+## 🔄 **2. Renderização Condicional com `? :` (Operador Ternário)**
+
+Se você quer um código **mais curto**, pode usar o **operador ternário (`? :`)**.
+
+![[Pasted image 20250221115408.png]]
+
+### 🔎 **O que acontece aqui?**
+
+✅ Se `estaLogado` for `true`, o botão mostra **"Sair"**  
+✅ Se `estaLogado` for `false`, o botão mostra **"Entrar"**
+
+Isso é **o mesmo que um `if`**, mas em **uma linha só**.
+
+## 🚀 **Quando Usar Renderização Condicional?**
+
+Use quando precisar **mostrar coisas diferentes dependendo de uma variável**.  
+✅ Exibir **mensagens diferentes** para usuários logados/deslogados  
+✅ Mostrar um **carregamento** enquanto os dados não chegam  
+✅ Esconder ou mostrar **componentes** de acordo com interações do usuário
+
+## Exemplo prático:
+
+![[Pasted image 20250221131544.png]]
+
+---
+---
+
+
+
+### **CHILDREN**
+
+## 🌱 **O que é `children`?**
+
+O `children` (ou `props.children`) no React é uma **maneira de passar elementos para dentro de um componente**. Ele funciona como um **espaço reservado** onde você pode colocar **qualquer conteúdo** (texto, imagens, outros componentes, etc.).
+
+### 🎨 **Explicação Simples**
+
+Imagine que você tem uma **caixa vazia** 📦. Essa caixa pode conter **qualquer coisa** dentro: brinquedos, livros, roupas...
+
+Agora, pense no React da mesma forma:
+
+- Você cria um **componente (caixa)**
+- Dentro dele, você pode colocar **qualquer conteúdo (children)**
+- O **componente não precisa saber o que vai dentro dele**, ele apenas exibe o que foi colocado
+
+## 🛠 **Exemplo Simples de `children`**
+
+Vamos criar um **componente chamado `Caixa`**, que pode receber qualquer conteúdo dentro dele.
+
+![[Pasted image 20250221103859.png]]
+
+### 🔎 **O que acontece aqui?**
+
+1. Criamos um **componente chamado `Caixa`**.
+2. Ele tem um `<div>` com `props.children` dentro.
+3. Quando usamos `<Caixa>` em **outro lugar**, podemos colocar **qualquer coisa dentro** e ele vai mostrar.
+4. No `<App>`, colocamos um `<h2>` dentro da `<Caixa>`, e ele aparece na tela!
+
+## 🎭 **Outro Exemplo – Passando Múltiplos Elementos**
+
+Você pode passar **qualquer coisa** dentro do `children` – até outros componentes!
+
+![[Pasted image 20250221104057.png]]
+
+## 🚀 **Quando Usar `children`?**
+
+Use `children` quando:  
+✅ **Seu componente precisa ser flexível** e permitir conteúdos diferentes.  
+✅ Você quer **evitar repetir código**, criando **componentes reutilizáveis**.  
+✅ Você quer criar **layouts dinâmicos** que possam receber **qualquer tipo de conteúdo**.
+
+### ❌ **Quando NÃO usar `children`?**
+
+❌ Quando o componente **precisa de dados específicos** para funcionar (exemplo: um botão com um rótulo fixo).  
+❌ Quando um **componente deve sempre exibir a mesma coisa** (exemplo: um cabeçalho fixo).
+
+Se precisar de mais detalhes, é só perguntar! 🚀🔥
+
 
 
 ---
